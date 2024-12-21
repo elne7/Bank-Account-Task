@@ -18,11 +18,11 @@ class BankAccount {
   double balance;
 
   void withdrow(double amount) {
-    if (balance > 0) {
+    if (balance >= 0) {
       if (amount <= balance) {
         balance -= amount;
       } else {
-        print('Not Enough Balance!');
+        print('\nNot Enough Balance!\n');
       }
     }
   }
